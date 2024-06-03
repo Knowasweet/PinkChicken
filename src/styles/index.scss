@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Inter:wght@100..900&display=swap');
+@import 'normalize.css/normalize.css';
+
+body {
+  background-color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #000000;
+
+  @media (max-width: $breakpoint-sm-max) {
+    background-color: #FFFFFF;
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-md-max) {
+    max-width: 688px;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    max-width: 375px;
+  }
+}
+
+.logo {
+  &__img {
+    width: 219px;
+    height: 32px;
+
+    &_max1440 {
+      @media (max-width: $breakpoint-md-max) {
+        width: 209px;
+        height: 29px;
+      }
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+      width: 181px;
+      height: 24px;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #525252;
+
+  &:visited {
+    color: #525252;
+  }
+
+  &:hover {
+    color: #EE26C2;
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: #EE26C2;
+    opacity: 1;
+  }
+}
+
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 54px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #b5b5b5;
+    border-radius: 54px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ff66b2;
+  }
+}
+
+button {
+  background-color: transparent;
+}
